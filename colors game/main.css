@@ -1,0 +1,32 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    max-width: 1523px;
+    border-radius: 15px;
+    
+}
+:root {
+    --background: rgb(10, 21, 70);
+    --principal: #fbfcff;
+    --detalles: #a10404;
+    --segundario: #0003b6e3;
+    --color-claro: rgb(59, 38, 41); 
+    --titulos:  'Marhey', cursive, 'Nerko One', cursive;
+    --sub-titulos: 'Marhey', cursive, 'Playfair Display', serif;
+    --parrafos: 'Roboto Mono', monospace;
+}
+h1 {
+    font-family: var(--titulos);
+}
+p{
+    font-family: var(--parrafos);
+}
+h2{
+    font-family: var(--sub-titulos); 
+}

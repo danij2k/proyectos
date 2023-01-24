@@ -1,0 +1,216 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-rows: 8rem 15rem 1fr;
+    grid-template-columns: 17rem 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside colorPrincipal"
+    "cajas cajas";
+    margin: 2rem 15rem;
+    box-shadow: 0 0 15px var(--principal);
+    margin: 5rem auto;
+}
+body > header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px var(--principal);
+    border-bottom: 10px solid var(--principal);
+    font-size: 28px;
+    padding-top: 1rem;
+    border-radius: 15px;
+}
+header h1 {
+    text-shadow: 0 0 10px black;
+    color: var(--principal);
+
+}
+aside{
+    grid-area: aside;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 15px black;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: 10px solid rgb(247, 240, 240);
+    margin-left: 1rem;
+    width: 18rem;
+    
+}
+aside h2 {
+    font-size: 28px;
+    text-shadow: 0 0 5px var(--principal);
+}
+aside section {
+    display: flex;
+    gap: 2rem;
+}
+aside ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--principal);
+    
+}
+aside ol li {
+    list-style: none;
+}
+aside ol h3 {
+    text-decoration: underline;
+}
+.aciertos{
+    grid-area: aciertos;
+}
+.desaciertos{
+    grid-area: desaciertos;
+}
+.colorPrincipal{
+    grid-area: colorPrincipal;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--principal);
+    margin-right: 1rem;
+    width: 60rem;
+    justify-self: flex-end;
+}
+.colorPrincipal h2 {
+    color: var(--principal);
+    padding: 10px;
+    text-shadow: 0 0 5px var(--detalles);
+}
+.cajas{
+    grid-area: cajas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3rem;
+    
+}
+.cajas h2 {
+    display: flex;
+    align-self: flex-start;
+}
+.cajas div {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    box-shadow: 0 0 5px var(--principal);
+
+}
+.cajas div:hover{
+    box-shadow: 0 0 15px white;
+}
+@media (max-width: 1564px) {
+    body {
+        box-shadow: 0 0 15px var(--principal);
+    }
+    .colorPrincipal{
+        width: 40rem;
+    }
+    .cajas div {
+        width: 10rem;
+        height: 10rem;
+    
+    }
+}
+@media (max-width: 1280px) {
+    body {
+        margin: 0;
+    }
+    .colorPrincipal{
+        width: 40rem;
+    }
+    .cajas div {
+        width: 10rem;
+        height: 10rem;
+    
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        box-shadow: none;
+    }
+    .colorPrincipal{
+        width: 40rem;
+    }
+    .cajas div {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+@media (max-width: 920px) {
+    .colorPrincipal{
+        width: 30rem;
+    }
+    .colorPrincipal h2 {
+        font-size: 18px;
+    }
+    aside{
+        width: 15rem;
+    }
+    .cajas div {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+/*version mobile*/
+@media (max-width: 400px) {
+    body{
+        display: grid;
+        grid-template-rows: 6rem 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header header"
+        "aside aside"
+        "colorPrincipal colorPrincipal"
+        "cajas cajas";
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    aside{
+        grid-area: aside;
+        width: 12rem;
+        border: none;
+        margin: 1rem auto;
+        background: none;
+        padding: 5px;
+    }
+    aside h2 {
+        font-size: 28px;
+    }
+    aside h3 {
+        font-size: 18px;
+    }
+    .colorPrincipal{
+        grid-area: colorPrincipal;
+        margin: 0 auto;
+        width: 20rem;
+    }
+    .cajas div {
+        width: 4rem;
+        height: 4rem;
+    }
+}
