@@ -1,30 +1,44 @@
 body{
-
-background-image: url("https://wallpapers.com/images/hd/legend-of-zelda-wallpaper-1080p-inn-spb-ru-fkltnur4vyb631uq.jpg");
-}
-/* 
-.timeline{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7nRQA1bJtwinfRFcvwSNOmTvwCYvp_KGNW0hLEE3O0VG1hUKaBbzt03Xj8rjHPL4bJc&usqp=CAU") ;
+    background-size: 250px 200px, auto, 150px; 
+    font-size: 1.5rem;
+    }
+    
+    .timeline {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between; 
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    content: ''; 
-    position: absolute;
-    background: rgb(207, 43, 43); 
-    width: 1px; 
-    left: 50%;
-} 
-.content{
-    width: 100rem;
-    padding: 1px;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    border-radius: 5px;
-    background: white;
-    transition: all 1s;
-    position: absolute;
-}
-.visible {
-    opacity: 1;
-    transform: translate(0, 0);
-}
- */
+    margin: 0 auto;
+    width: 50rem;
+    }
+    
+    .content {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 20px;
+    background-color: rgb(204,158,72);
+    border-radius: 10px;
+    text-align: center;
+    border: 5px;
+    border-style:solid;
+    position: relative;
+    }
+    
+    .content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .content img {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 10px;
+    padding: auto;
+    }
+    
+    #textBox{
+    border: solid rgb(97,63,25);
+    background-color: rgb(97,63,25,);
+    }
+    

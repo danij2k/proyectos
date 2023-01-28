@@ -2,7 +2,7 @@
 
 body{
 background-image: url("https://wallpapers.com/images/hd/legend-of-zelda-wallpaper-1080p-inn-spb-ru-fkltnur4vyb631uq.jpg");
-float: initial;
+float: left;
 }
 .timeline{ 
     position: relative;
@@ -13,19 +13,14 @@ float: initial;
     background: rgb(207, 43, 43); 
     width: 1px; 
     left: 50%;
-} 
+}  */ */
 .content{
     width: 100px;
     padding: 20px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
-    background: white;
-    /*background-color: rgba(255, 255, 255, .15);
+    background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);*/
-    transition: all 1s;
-/*     opacity: 0;
- */}
-.visible {
-    opacity: 1;
-    transform: translate(0, 0);
+    transition: all ; */
+    opacity: 0;
 }

@@ -6,7 +6,6 @@ function readJson() {
     .then((response) => response.json())
     //leer los elementos del array
     .then((data) => {
-      //ordenar por fecha
       data.sort((a, b) => a.date - b.date);
 
       console.log(data);
@@ -14,14 +13,9 @@ function readJson() {
       data.forEach((element) => {
         let newDiv = document.createElement("div");
         newDiv.classList.add("content");
-        newDiv.innerHTML = `title: ${element.title} ${element.date} ${element.text}`;
-
-        let img = document.createElement("img");
-        img.src = element.image;
-
-        newDiv.appendChild(img);
+        newDiv.innerHTML = `<div id= textBox><h3></h3>${element.title}</h3><p id= date>${element.date}</p><p>${element.text}</p></div><img src="${element.image}">`;
         boxes.appendChild(newDiv);
-      });
+    });
 
       console.log(data);
     });
