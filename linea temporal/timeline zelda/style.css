@@ -1,44 +1,77 @@
-body{
-    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7nRQA1bJtwinfRFcvwSNOmTvwCYvp_KGNW0hLEE3O0VG1hUKaBbzt03Xj8rjHPL4bJc&usqp=CAU") ;
-    background-size: 250px 200px, auto, 150px; 
-    font-size: 1.5rem;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
     
-    .timeline {
+    
+}
+
+body {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4e36cc94-d6f8-4f61-bf51-2b5565ae7108/dabzhd6-ef602b3f-ed75-4651-8b6e-58c13597c0a6.png/v1/fill/w_1192,h_670,q_70,strp/minimalistic_legend_of_zelda_wallpaper__4k__by_henrikpw_dabzhd6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcLzRlMzZjYzk0LWQ2ZjgtNGY2MS1iZjUxLTJiNTU2NWFlNzEwOFwvZGFiemhkNi1lZjYwMmIzZi1lZDc1LTQ2NTEtOGI2ZS01OGMxMzU5N2MwYTYucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.lxqk-TBtSQxnAYYi1oriPvAg2f4BKBgBxDBOcQGKbMk);
+    display: block;
+    font-size: 1.5rem;
+}
+
+.timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     margin: 0 auto;
     width: 50rem;
-    }
-    
-    .content {
+    height: 50rem;
+}
+
+.content {
     width: 100%;
+    height: 80rem;
     margin: 1rem 0;
     padding: 20px;
-    background-color: rgb(204,158,72);
+    background-color: rgb(156, 102, 0);
     border-radius: 10px;
     text-align: center;
     border: 5px;
-    border-style:solid;
+    border-style: solid;
     position: relative;
-    }
+
+}
+ul{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    margin: 1rem;
+    background-color: rgb(156, 102, 0);
+    border-radius: 10px;
+    text-align: center;
+    border: 5px;
+    border-style: solid;
+    position: relative;
+    align-items: center;
+}
+
+label{
+    color: aliceblue;
+}
+li{
+    margin: 2rem;
+}
+
+input{
+    border: solid;
+    padding: 1rem;
+}
+button{
+    border: solid;
+    width: 10rem;
+    height: 3rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 3rem;
+}
+@media screen and (max-width: 980px){
     
-    .content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    }
-    
-    .content img {
-    width: 20rem;
-    height: 20rem;
-    margin-top: 10px;
-    padding: auto;
-    }
-    
-    #textBox{
-    border: solid rgb(97,63,25);
-    background-color: rgb(97,63,25,);
-    }
-    
+}
